@@ -68,7 +68,7 @@ const Services = () => {
           <Card
             title={"Character Modeling and Animations"}
             disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
-            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before.`}
+            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
             tags={['character modeling', '3D animation', 'intricate models', 'personality and emotion', 'storytelling']}
 
           />
