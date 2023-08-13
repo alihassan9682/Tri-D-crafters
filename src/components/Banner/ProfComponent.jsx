@@ -1,27 +1,71 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
-import { FaLinkedinIn } from "react-icons/fa";
+import { SiFiverr, SiUpwork, SiFacebook, SiBehance } from "react-icons/si";
 import { Slide } from "react-awesome-reveal";
 
 const ProfComponent = () => {
   return (
-    <Container id="home">
-      <Slide direction="left">
+    <Container id="home" className="">
+      <Slide direction="down">
         <Texts>
           <h4>
-            Hello <span className="green">I'am</span>
+            Hello <span className="green">We are</span>
           </h4>
-          <h1 className="green">BlenSpark</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+          <h1 className="green">Tri-D Crafters</h1>
+          <h3>3D Visualization Services Provider</h3>
+          <p className="font-sans text-xl">
+            Tri-D Crafters is a leading provider of cutting-edge 3D
+            visualization services. Our company specializes in transforming
+            ideas and concepts into stunning, realistic visual representations.
+            With a team of skilled designers and state-of-the-art technology, we
+            bring designs to life, allowing clients to visualize their projects
+            in a captivating and immersive manner.
           </p>
-          <button>Let's talk</button>
-          <Social>
+          <div className="flex gap-4 mt-4">
+            <a
+              href="https://www.upwork.com/freelancers/~017d02c9bf67817547"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="bg-[#01be96]">
+                <SiUpwork
+                  style={{ width: "90px", height: "50px", padding: "10px" }}
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.fiverr.com/s/mk9qjN"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="bg-[#01be96]">
+                <SiFiverr style={{ width: "90px", height: "50px" }} />
+              </div>
+            </a>
+            <a
+              href="https://www.behance.net/sajidayaqoob"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="bg-[#01be96]">
+                <SiBehance
+                  style={{ width: "90px", height: "50px", padding: "12px" }}
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091277553423"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="bg-[#01be96]">
+                <SiFacebook
+                  style={{ width: "90px", height: "50px", padding: "14px" }}
+                />
+              </div>
+            </a>
+          </div>
+          {/* <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
@@ -40,15 +84,12 @@ const ProfComponent = () => {
                 </a>
               </span>
             </div>
-          </Social>
+          </Social> */}
         </Texts>
       </Slide>
       <Slide direction="right">
         <Profile>
-          <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
-            alt="profile"
-          />
+          {/* <img style={{ width: 800, height: 300 }} src={blender} alt="logo" /> */}
         </Profile>
       </Slide>
     </Container>

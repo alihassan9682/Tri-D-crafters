@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { GiCandleFlame } from "react-icons/gi";
+import blender from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/blender.png";
+
 
 const Header = () => {
     const [bar, setBar] = useState(false);
   return (
-    <Container bar={bar}>
+    <Container bar={bar} className=''>
         <Logo>
-            <span className='green'><GiCandleFlame/></span>
-            <h1>BlenSpark</h1>
+            <span className='green'> <img style={{ width: 50, height: 50 }} src={blender} alt="logo" /></span>
+            <h1>Tri-D Crafter</h1>
         </Logo>
-        <Nav bar={bar}>
+        <Nav bar={bar} className='text-lg'>
             <span><a href="#home">Home</a></span>
             <span><a href="#service">Services</a></span>
             <span><a href="#project">Projects</a></span>
@@ -114,7 +116,6 @@ const Nav = styled.div`
     span{
         margin-left: 1rem;
         a{
-            color: #fff;
             text-decoration: none;
             font-weight: 400;
             position: relative;
@@ -125,7 +126,7 @@ const Nav = styled.div`
                 right: 0;
                 bottom: -5px;
                 height: 2px;
-                background-color: #fff;
+                background-color: #A2A2A2;
                 transform: scale(0);
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
