@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { GiCandleFlame } from "react-icons/gi";
-import blender from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/blender.png";
+import logo from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/logo1.png";
 
 
 const Header = () => {
@@ -9,8 +9,7 @@ const Header = () => {
   return (
     <Container bar={bar} className=''>
         <Logo>
-            <span className='green'> <img style={{ width: 50, height: 50 }} src={blender} alt="logo" /></span>
-            <h1>Tri-D Crafter</h1>
+            <span className='gree'> <img className='' style={{ width: 250, height: 60 }} src={logo} alt="logo" /></span>
         </Logo>
         <Nav bar={bar} className='text-lg'>
             <span><a href="#home">Home</a></span>

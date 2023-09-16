@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { MdAlternateEmail } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
+
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+import {  FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import Sajo from '/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/sajo.png';
 
 const Footer = () => {
   const scrollUp = () => {
@@ -16,108 +16,80 @@ const Footer = () => {
     });
   };
   return (
-    <Container id="footer">
-      <Profile>
-        <Slide direction="left" delay={1}>
-          <h1>Portfolio</h1>
-        </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div>
-        <div className="links">
-          <Slide direction="left">
-            <h1>Contact me directly:</h1>
-          </Slide>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
-          </div>
-          <div>
-            <Slide direction="left">
-              <span>
-                <HiOutlineMailOpen />
-              </span>
-            </Slide>
-            <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
-            </Slide>
-          </div>
-        </div>
-        <div className="profiles">
-          <Slide direction="left">
-            <h1>Check my profiles</h1>
-          </Slide>
-          <div className="icons">
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillGithub />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <AiFillLinkedin />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
-                </a>
-              </span>
-            </Zoom>
-          </div>
-        </div>
-        <Fade>
-          <ArrowUp onClick={scrollUp}>
-            <AiOutlineArrowUp />
-          </ArrowUp>
-        </Fade>
+    <Container id="footer" className="p-8">
+      <Profile>   
+      <Slide direction="left">
+      <img className='-mt-10' style={{ width: 350, height: 500 }} src={Sajo} alt="logo" />
+      </Slide>
       </Profile>
-      <Form>
+      <div className="w-[60%]">
         <Slide direction="right">
           <form>
-            <div className="name">
-              <span>
-                <CgProfile />
-              </span>
-              <input type="text" placeholder="Fullname..." />
+            <div className="relative mb-6">
+              <label
+                for="first_name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                First name
+              </label>
+              <input
+                type="text"
+                id="first_name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Sajo"
+                required
+              />
             </div>
-            <div className="email">
-              <span>
-                <MdAlternateEmail />
-              </span>
-              <input type="email" placeholder="Email..." />
+
+            <label
+              for="input-group-1"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Your Email
+            </label>
+            <div class="relative mb-6">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 16"
+                >
+                  <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                  <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="name@flowbite.com"
+              />
             </div>
-            <div className="message">
-              <span className="messageIcon">
-                <FiMail />
-              </span>
-              <textarea cols="30" rows="10" placeholder="Message..."></textarea>
-            </div>
-            <button>Submit</button>
+            <label
+              for="input-group-1"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >
+              Your Message
+            </label>
+                <textarea
+                  id="editor"
+                  rows="8"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Write an article..."
+                  required
+                ></textarea>
+          
+            <button
+              type="submit"
+              class="mt-4  inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-[#01be96] rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800"
+            >
+              Submit
+            </button>
           </form>
         </Slide>
-      </Form>
+      </div>
     </Container>
   );
 };
@@ -151,7 +123,7 @@ const Profile = styled.div`
     }
 
     p {
-      width: 60%;
+      width: 40%;
       padding-top: 0.5rem;
       @media (max-width: 650px) {
         width: 100%;

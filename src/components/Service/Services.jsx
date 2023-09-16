@@ -6,12 +6,13 @@ import styled from "styled-components";
 import Card from "./Card";
 import { Slide } from "react-awesome-reveal";
 
+
 const Services = () => {
   return (
     <Container id="service">
       <Slide direction="down">
-        <p className="text-4xl">
-          My <span className="green ">services</span>
+        <p className="text-6xl">
+          My <span className="text-orange-500">services</span>
         </p>
       </Slide>
       <Cards>
@@ -31,7 +32,7 @@ const Services = () => {
             redefine spaces. With attention to detail and ergonomic considerations, we ensure your furniture designs enhance both the visual 
             appeal and comfort of any environment.
             `}
-            tags={[ 'furniture design', 'innovative concepts', 'bespoke pieces', 'aesthetics and functionality', 'ergonomic design']}
+            tags={[ 'furniture design', 'innovative concepts', 'bespoke pieces', 'ergonomic design']}
 
           />
         </Slide>
@@ -41,7 +42,7 @@ const Services = () => {
             disc={`From concept to virtual reality, our product modeling and animation services add depth to your designs. 
             Our experts craft realistic 3D models and animations that showcase your products from every angle. 
             Witness your ideas come to life in a dynamic and engaging way.`}
-            tags={['product','modeling', '3D animation', 'realistic models', 'dynamic visuals', 'virtual reality']}
+            tags={['modeling', '3D animation', 'realistic models', 'dynamic visuals', 'virtual reality']}
 
           />
         </Slide>
@@ -61,6 +62,24 @@ const Services = () => {
             from color schemes to furnishings, to create harmonious and inviting interiors. Discover personalized designs 
             that reflect your style and elevate the ambiance.`}
             tags={['interior design', 'personalized spaces', 'harmonious interiors', 'inviting ambiance', 'furnishings and color schemes']}
+
+          />
+        </Slide>
+        <Slide direction="right">
+          <Card
+            title={"Character Modeling and Animations"}
+            disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
+            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
+            tags={['character modeling', '3D animation', 'intricate models', 'personality and emotion', 'storytelling']}
+
+          />
+        </Slide>
+        <Slide direction="right">
+          <Card
+            title={"Character Modeling and Animations"}
+            disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
+            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
+            tags={['character modeling', '3D animation', 'intricate models', 'personality and emotion', 'storytelling']}
 
           />
         </Slide>

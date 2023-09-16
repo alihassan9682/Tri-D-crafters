@@ -1,19 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import { SiFiverr, SiUpwork, SiFacebook, SiBehance } from "react-icons/si";
+import {
+  SiFiverr,
+  SiUpwork,
+  SiFacebook,
+  SiBehance,
+  SiWhatsapp,
+} from "react-icons/si";
 import { Slide } from "react-awesome-reveal";
+import ReactWhatsapp from "react-whatsapp";
 
 const ProfComponent = () => {
   return (
     <Container id="home" className="">
       <Slide direction="down">
         <Texts>
-          <h4>
-            Hello <span className="green">We are</span>
-          </h4>
-          <h1 className="green">Tri-D Crafters</h1>
-          <h3>3D Visualization Services Provider</h3>
-          <p className="font-sans text-xl">
+          <p className="text-5xl mt-14">
+            Hello <span className="text-orange-500">We are</span>
+          </p>
+          <span className="text-7xl font-extrabold">Tri<span className="text-8xl text-orange-500">D</span>Crafters</span>
+          <p className="text-6xl mt-4">3D Visualization Services Provider</p>
+          <p className="text-2xl mt-3">
             Tri-D Crafters is a leading provider of cutting-edge 3D
             visualization services. Our company specializes in transforming
             ideas and concepts into stunning, realistic visual representations.
@@ -21,6 +28,22 @@ const ProfComponent = () => {
             bring designs to life, allowing clients to visualize their projects
             in a captivating and immersive manner.
           </p>
+          <div className="mt-16">
+          <ReactWhatsapp
+              number="+923224840169"
+              className="!-mt-3 rounded-full "
+            >
+              <div className="bg-[#01be96] ">
+                <SiWhatsapp
+                  style={{
+                    width: "210px",
+                    height: "30px",
+                  }}
+                />
+              </div>
+            </ReactWhatsapp>
+          </div>
+          
           <div className="flex gap-4 mt-4">
             <a
               href="https://www.upwork.com/freelancers/~017d02c9bf67817547"
