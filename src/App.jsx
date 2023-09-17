@@ -22,9 +22,9 @@ function App() {
           <ProfComponent />
         </Banner>
       <Services />
-      <LightColor>
+      {/* <LightColor>
         <Projects />
-      </LightColor>
+      </LightColor> */}
       <Clients />
       <LightColor>
         <Footer />
