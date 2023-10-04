@@ -7,7 +7,11 @@ import Card from "./Card";
 import Sofa from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/sofa.jpg";
 import Product from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/product.jpg";
 import Kitchen from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/kitchen.jpg";
+import Layout from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/2dlayouts.jpeg";
 import Archetecture from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/archetecture.jpeg";
+import Graphics from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/graphics.png";
+import Marketing from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/marketing.JPG";
+import Character from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/character.jpeg";
 import { Slide } from "react-awesome-reveal";
 
 const Services = () => {
@@ -68,6 +72,7 @@ const Services = () => {
         </Slide>
         <Slide direction="left">
           <Card
+            img={Layout}
             title={"2d Layouts"}
             disc={`Transform your visions into reality with our expert 2D layout services. Our skilled team crafts meticulous 2D layouts that bring your ideas to life.
              From concept to blueprint, we ensure precision and creativity in every detail. Trust us for top-notch 2D layouts that set 
@@ -99,6 +104,7 @@ const Services = () => {
         </Slide>
         <Slide direction="right">
           <Card
+            img={Character}
             title={"Character Modeling and Animations"}
             disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
             adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
@@ -113,29 +119,33 @@ const Services = () => {
         </Slide>
         <Slide direction="right">
           <Card
-            title={"Poster Designs"}
-            disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
-            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
+            img={Marketing}
+            title={"Digital marketing"}
+            disc={`Unlock your brand's full potential with our expert team of digital marketing professionals. We provide a comprehensive range of services 
+            tailored to boost your online presence and drive results.
+            `}
             tags={[
-              "character modeling",
-              "3D animation",
-              "intricate models",
-              "personality and emotion",
-              "storytelling",
+              "Social Media Marketing",
+              "PPC Advertising",
+              "Content Marketing",
+              "Email Marketing",
+              "Analytics & Reporting",
             ]}
           />
         </Slide>
         <Slide direction="right">
           <Card
-            title={"Packeging Designs"}
-            disc={`Characters come to life through our expert character modeling and animation. We sculpt intricate 3D models and animate them with precision, 
-            adding personality and emotion to your projects. Watch characters tell stories and engage audiences like never before`}
+            img={Graphics}
+            title={"Bed and Matress Designing"}
+            disc={`Our talented team specializes in creating visually stunning and impactful designs to elevate your brand. From eye-catching logos 
+            to captivating marketing materials, we offer a comprehensive range of design solutions. Let us transform your ideas into compelling 
+            visuals that leave a lasting impression.`}
             tags={[
-              "character modeling",
-              "3D animation",
-              "intricate models",
-              "personality and emotion",
-              "storytelling",
+              "GraphicDesign",
+              "CreativeDesign",
+              "VisualIdentity",
+              "Beds",
+              "Matresses",
             ]}
           />
         </Slide>

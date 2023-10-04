@@ -6,7 +6,6 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import {  FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import Sajo from '/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/sajo.png';
 
 const Footer = () => {
   const scrollUp = () => {
@@ -17,25 +16,20 @@ const Footer = () => {
   };
   return (
     <Container id="footer" className="p-8">
-      <Profile>   
-      <Slide direction="left">
-      <img className='-mt-10' style={{ width: 350, height: 500 }} src={Sajo} alt="logo" />
-      </Slide>
-      </Profile>
-      <div className="w-[60%]">
+      <div className="w-[80%] bg-gray-50 p-6 opacity-90">
         <Slide direction="right">
           <form>
             <div className="relative mb-6">
               <label
                 for="first_name"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                class="block mb-2 text-sm font-medium text-gray-900"
               >
                 First name
               </label>
               <input
                 type="text"
                 id="first_name"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Sajo"
                 required
               />
@@ -43,7 +37,7 @@ const Footer = () => {
 
             <label
               for="input-group-1"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900"
             >
               Your Email
             </label>
@@ -63,21 +57,20 @@ const Footer = () => {
               <input
                 type="text"
                 id="input-group-1"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@flowbite.com"
               />
             </div>
             <label
               for="input-group-1"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900"
             >
               Your Message
             </label>
                 <textarea
                   id="editor"
                   rows="8"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Write an article..."
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   required
                 ></textarea>
           
@@ -90,6 +83,11 @@ const Footer = () => {
           </form>
         </Slide>
       </div>
+      <Profile>   
+      {/* <Slide direction="left">
+      <img className='mt-16' style={{  }} src={Sajo} alt="logo" />
+      </Slide> */}
+      </Profile>
     </Container>
   );
 };

@@ -7,27 +7,29 @@ import Projects from "./components/Projects/Projects";
 import Services from "./components/Service/Services";
 import header from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/header.JPG";
 
-
 function App() {
   return (
     <Container>
-        <Banner style={{
-        background: `url(${header})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-      }}
-      > 
-          <Header />
-          <ProfComponent />
-        </Banner>
+      <Banner
+        style={{
+          background: `url(${header})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Header />
+        <ProfComponent />
+      </Banner>
       <Services />
       {/* <LightColor>
         <Projects />
       </LightColor> */}
       <Clients />
       <LightColor>
-        <Footer />
+        <div className="bg-[url('/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/sajo1.png')] bg-cover bg-no-repeat ">
+          <Footer />
+        </div>
       </LightColor>
     </Container>
   );
