@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import ClientSlider from "./ClientSlider";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Slide } from "react-awesome-reveal";
 import R1 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R1.jpeg";
 import R2 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R2.jpeg";
 import R3 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R3.jpeg";
@@ -10,8 +11,6 @@ import R4 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R4.jpeg"
 import R5 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R5.jpeg";
 import R6 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R6.jpeg";
 import R7 from "/home/dev/Documents/React/tri-Dcrafters/src/assets/pngs/R7.jpeg";
-
-import { Slide } from "react-awesome-reveal";
 
 let clients = [
   {
@@ -35,8 +34,8 @@ let clients = [
   {
     img: R7,
   },
-  
 ];
+
 var settings = {
   dots: true,
   infinite: true,
@@ -75,13 +74,16 @@ var settings = {
 
 const Clients = () => {
   const arrowRef = useRef(null);
-  let clientDisc = "";
-  clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
+  let clientDisc = clients.map((item, i) => <ClientSlider item={item} key={i} />);
   return (
     <Container id="client">
       <Slide direction="left">
-        <span className="text-orange-500 text-6xl">testimonials</span>
-        <p className="text-4xl">what clients say</p>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-orange-500 uppercase">
+          testimonials
+        </h1>
+        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          what clients say
+        </p>
       </Slide>
       <Testimonials>
         <Slider ref={arrowRef} {...settings}>
@@ -112,20 +114,8 @@ const Container = styled.div`
     width: 90%;
   }
 
-  span {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   h1 {
     padding-top: 1rem;
-    text-transform: capitalize;
-  }
-
-  .slick-list,
-  .slick-slider,
-  .slick-track {
-    padding: 0;
   }
 
   .slick-dots {
@@ -133,18 +123,9 @@ const Container = styled.div`
     margin-left: 1rem;
   }
 
-  .slick-dots li button:before {
-    content: "";
-  }
-
   .slick-dots li button {
     width: 9px;
     height: 4px;
-    background: linear-gradient(
-      159deg,
-      rgb(45, 45, 58) 0%,
-      rgb(43, 43, 53) 100%
-    );
     padding: 0.1rem;
     margin-top: 1rem;
     transition: all 400ms ease-in-out;
@@ -165,6 +146,7 @@ const Testimonials = styled.div`
   margin-top: 2rem;
   position: relative;
 `;
+
 const Buttons = styled.div`
   position: absolute;
   right: 0.7rem;

@@ -136,16 +136,14 @@ const Services = () => {
         <Slide direction="right">
           <Card
             img={Graphics}
-            title={"Bed and Matress Designing"}
-            disc={`Our talented team specializes in creating visually stunning and impactful designs to elevate your brand. From eye-catching logos 
-            to captivating marketing materials, we offer a comprehensive range of design solutions. Let us transform your ideas into compelling 
-            visuals that leave a lasting impression.`}
+            title={"Bed and Mattress Designing"}
+            disc={`Transforming Dreams into Comfort! Expert in Mattress and Bed Design. Tailored solutions for your perfect sleep space. Quality, Style, and Comfort Combined.`}
             tags={[
-              "GraphicDesign",
-              "CreativeDesign",
+              "QualitySleep",
+              "ComfortRedefined",
               "VisualIdentity",
-              "Beds",
-              "Matresses",
+              "BedDesigns ",
+              "Mattresses",
             ]}
           />
         </Slide>
